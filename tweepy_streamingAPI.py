@@ -1,5 +1,3 @@
-
-# %%
 # Setup and install necessary packages
 # Please make sure to install the package Tweepy 
 # pip install tweepy
@@ -25,8 +23,6 @@ class StdOutListener(StreamListener):
 l = StdOutListener()
 
 # Set up the credentials, hashtags, and filename here
-
-# %%
 # Please add your Twitter API user credentials here. 
 # The tokens and keys below are invalid.
 
@@ -44,10 +40,8 @@ tracking = ['#fortnite', '#TravisScott','#travisscott','#travisscottfortnite','#
 # Define file in which to write the Tweets 
 filename = 'fortnite_stream.json'
 
-# %% [markdown]
-# # Start your data collection
+# Start your data collection
 
-# %%
 print('Writing to...' + filename)
 
 while True:
