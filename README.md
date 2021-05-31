@@ -1,4 +1,4 @@
-# Data collection through Streaming API and REST API
+# Data collection through twitter API (Streaming API & REST API)
 
 This repository contains the scripts to collect the streaming tweets and retrieve the historic tweets from twitter API.
 
