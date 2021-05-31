@@ -16,6 +16,7 @@ pip install tweepy
 ```
 import tweepy
 import json
+from datetime import datetime
 ```
 
 ## Further Resource
