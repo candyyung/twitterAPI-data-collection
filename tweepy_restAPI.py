@@ -1,7 +1,6 @@
 
-# ## Setup and install necessary packages
+#Setup and install necessary packages
 
-# %%
 #Load the library
 import tweepy
 import json
@@ -15,10 +14,8 @@ access_token_secret = "sq1J23rIaNna4BiS4VpjKH4i7HLdA2iXRPUlVkIAP8CS2r"
 api_key = "OXHxsfNZtmPgNcptFJ4T5lJd5"  
 api_secret_key = "A9fVqdkG12i0Hdx4t3CV8nCEcb6GGcKXNcUP91gXSKDMcdRNfh" 
 
-# %% [markdown]
-# ## Input the hastags and neccessary settings for Rest API & collect the data
+#Input the hastags and neccessary settings for Rest API & collect the data
 
-# %%
 #REST API - get the historic tweets
 auth = tweepy.AppAuthHandler(api_key, api_secret_key)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
