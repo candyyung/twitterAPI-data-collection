@@ -1,10 +1,10 @@
 # Data collection through twitter API (Streaming API & REST API)
 
-This repository contains the scripts to collect the streaming tweets and retrieve the historic tweets from twitter API. Because the Twitter Developer account used here is for academic purpose only, there are thresholds of streaming the tweets. In order to get the most for a particular event, we used both streaming API and REST API to get the tweets related to certain hashtags in a specified period. Apart from data collection, this repository also covers the step to remove the duplicate tweets through tweet id. 
+This repository contains the scripts to collect the streaming tweets and retrieve the historic tweets from twitter API. Because the Twitter Developer account used here is for academic purpose only, there is a threshold for the maximum number of tweets streamed. In order to get the most for a particular event, we used both streaming API and REST API to get the tweets related to certain hashtags in a specified period. Apart from data collection, this repository also covers the step to remove the duplicate tweets through tweet id. 
 
 ## Installation
 
-
+* Python 3
 * Install the Tweepy  
   * Mac users open a new terminal window and type it there. 
   * Windows users open Anaconda prompt and type in the command below.
