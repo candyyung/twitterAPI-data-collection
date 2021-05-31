@@ -1,13 +1,10 @@
 
-# Merge the tweets from streaming API and REST API
+#Merge the tweets from streaming API and REST API
 
-# %%
 #load the library
 import json
 from datetime import datetime
 
-
-# %%
 #Open both .json files
 with open('fortnite_event_live.json') as fileStream:
     streamData = fileStream.read()
@@ -22,10 +19,9 @@ combinedData = (streamData + searchData)
 with open('fortnite_event_combined.json', 'w') as fileCombined:
     fileCombined.write(combinedData)
 
-# %% [markdown]
-# ## Deduplicate the tweets
 
-# %%
+#Deduplicate the tweets
+
 #reopen the new combined file, remove duplicates using "id" key/value
 with open('fortnite_event_combined.json', 'r') as fileCombined:
     tweetsDuplicates = map(json.loads, fileCombined)
@@ -42,7 +38,6 @@ with open('fortnite_event_uniques.json', 'w') as fileUnique:
         fileUnique.write('\n')
 
 
-# %%
 #reopen the new file with unique tweets, sort by timestamp
 with open('fortnite_event_uniques.json', 'r') as fileUnique:
     tweetsUniques = map(json.loads, fileUnique)
